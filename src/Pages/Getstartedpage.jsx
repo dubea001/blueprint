@@ -11,7 +11,7 @@ const Getstartedpage = () => {
     <main className=''>
       <section className="border-lightBlueBg border-b-2 pb-padInRem3 flex flex-col p-4 w-full items-center justify-center mx-auto md:py-padInRem3">  
         <h1 className="text-mainBlueBg text-center font-bold text-size35 mb-4 leading-none md:text-size45 md:leading-none">Get Started</h1>
-        <div className="text-center"><Link to="/" className="font-normal text-size20 px-padInRem1 py-pad6 cursor-pointer hover:font-medium text-mainTextColor md:px-pad16 md:py-pad10">Home</Link></div>
+        <div className="text-center"><Link to="/blueprint" className="font-normal text-size20 px-padInRem1 py-pad6 cursor-pointer hover:font-medium text-mainTextColor md:px-pad16 md:py-pad10">Home</Link></div>
       </section>  
       <div className="border-lightTextColor border-b-2 pb-padInRem3 flex flex-col mb-12 items-center md:flex-row md:justify-center">
         <Form/>

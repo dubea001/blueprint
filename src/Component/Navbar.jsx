@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return(<nav className="bg-lightBlueBg flex justify-between items-center flex-row mx-auto md:py-6 md:px-12">
     <div className="flex items-center bg-transparent rounded md:flex md:justify-around md:w-11/12 md:m-auto md:bg-white">
-       <Link to="/" className="flex item-center justify-center w-48 h-20 cursor-pointer">
+       <Link to="/blueprint" className="flex item-center justify-center w-48 h-20 cursor-pointer">
           <img src={WebsiteLogo} className="w-full" />
        </Link>
         <div className="hidden md:flex space-x-6">
