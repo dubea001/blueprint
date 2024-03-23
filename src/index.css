@@ -1,22 +1,6 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 
 
-* {
-  margin: 0;
-  padding: 0;
-  line-height: 1.2;
-}
-
-body {
-  background: hsl(0, 100%, 100%);
-  font-family: 'syne', sans-serif;
-}
-
-:root {
-  --primaryColor: hsl(205, 95%, 40%);
-  --textColor: hsl(0, 0%, 100%);
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
