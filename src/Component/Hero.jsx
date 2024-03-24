@@ -13,7 +13,7 @@ const Hero = () => {
               <p className="mb-4 text-lightTextColor font-normal text-size14 md:text-size18 md:leading-none md:mb-6">BlueprintM6 Technology is to create more options, <br /> so does it create challenges.
               Providing solutions to these <br /> challenges in an advanced manner is the reason for our increasing numbers.
               </p>
-               <Link to="/blueprint/getstarted" className="font-normal text-size16 px-padInRem1 py-pad6 bg-mainBlueBg cursor-pointer hover:font-medium text-white md:px-pad16 md:py-pad10">Get Started</Link>
+               <Link to="/getstarted" className="font-normal text-size16 px-padInRem1 py-pad6 bg-mainBlueBg cursor-pointer hover:font-medium text-white md:px-pad16 md:py-pad10">Get Started</Link>
           </div>
           <img src={HeroImage} alt="background" className="w-full mt-4 border-8 border-white rounded-lg md:w-2/5 md:mt-16" loading='lazy'/>
       </section>

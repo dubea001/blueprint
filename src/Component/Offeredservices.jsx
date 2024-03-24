@@ -9,7 +9,7 @@ import Socials from '../assets/images/apexdeftsocials.jpeg';
 import BlackmailExtortion from '../assets/images/apexdeft_blackmail.jpg';
 
 const Offeredservices = () => {
-  return(<section id='services' className=" flex flex-col w-full p-6 mx-auto">
+  return(<section className=" flex flex-col w-full p-6 mx-auto">
 
       <div className="mb-8 md:flex md:justify-between md:items-center md:px-12">
           <div className="">
@@ -30,7 +30,7 @@ const Offeredservices = () => {
               <p className="text-lightTextColor mb-6">
                 Cryptocurrency recovery , Bitcoin recovery, Ethereum, USDT, Grenminer, IPC, etc.
               </p>
-              <Link to="/blueprint/getstarted" className="text-white bg-mainTextColor cursor-pointer py-1 px-4 hover:bg-hoverTextMainColor">Get started</Link>  
+              <Link to="/getstarted" className="text-white bg-mainTextColor cursor-pointer py-1 px-4 hover:bg-hoverTextMainColor">Get started</Link>  
             </div>
           </div>
 
@@ -41,7 +41,7 @@ const Offeredservices = () => {
                 <p className="text-lightTextColor mb-6">
                   Victims of Sextortion, Blackmail, Extortion, Romance Scam, Recovering Lost or Stolen Money etc.
                 </p>
-                <Link to="/blueprint/getstarted" className="text-white bg-mainTextColor cursor-pointer py-1 px-4 hover:bg-hoverTextMainColor">Get started</Link>
+                <Link to="/getstarted" className="text-white bg-mainTextColor cursor-pointer py-1 px-4 hover:bg-hoverTextMainColor">Get started</Link>
             </div>
            
           </div>
@@ -53,7 +53,7 @@ const Offeredservices = () => {
                 <p className="text-lightTextColor mb-6">
                   Reactivation of deactivated account , Instacart, Amazon flex, door dash, Uber eats, Uber driver, Shipt , GrubHub, Postmates, esty and eBay etc
                 </p>
-                <Link to="/blueprint/getstarted" className="text-white bg-mainTextColor cursor-pointer py-1 px-4 hover:bg-hoverTextMainColor">Get started</Link>  
+                <Link to="/getstarted" className="text-white bg-mainTextColor cursor-pointer py-1 px-4 hover:bg-hoverTextMainColor">Get started</Link>  
             </div>
                     
           </div>
@@ -65,7 +65,7 @@ const Offeredservices = () => {
                 <p className="text-lightTextColor mb-6">
                   Credit score improvement and criminal record expungement on the background check.					
                 </p>
-                <Link to="/blueprint/getstarted" className="text-white bg-mainTextColor cursor-pointer py-1 px-4 hover:bg-hoverTextMainColor">Get started</Link>
+                <Link to="/getstarted" className="text-white bg-mainTextColor cursor-pointer py-1 px-4 hover:bg-hoverTextMainColor">Get started</Link>
             </div>
             
           </div>
@@ -77,7 +77,7 @@ const Offeredservices = () => {
                 <p className="text-lightTextColor mb-6">
                   How to hack into any device, computer, phone, iPhone, deleting and Recovering lost files from devices etc.
                 </p>
-                <Link to="/blueprint/getstarted" className="text-white bg-mainTextColor cursor-pointer py-1 px-4 hover:bg-hoverTextMainColor">Get started</Link>
+                <Link to="/getstarted" className="text-white bg-mainTextColor cursor-pointer py-1 px-4 hover:bg-hoverTextMainColor">Get started</Link>
             </div>
                        
           </div>
@@ -89,7 +89,7 @@ const Offeredservices = () => {
                 <p className="text-lightTextColor mb-6">
                   Account recovery of Facebook, Instagram, Twitter, TikTok, Snapchat, Skype, only fan etc.
                 </p>
-                <Link to="/blueprint/getstarted" className="text-white bg-mainTextColor cursor-pointer py-1 px-4 hover:bg-hoverTextMainColor">Get started</Link>  
+                <Link to="/getstarted" className="text-white bg-mainTextColor cursor-pointer py-1 px-4 hover:bg-hoverTextMainColor">Get started</Link>  
             </div>
              
           </div>

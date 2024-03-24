@@ -9,14 +9,14 @@ import Reviewspage from '../src/Pages/Reviewspage';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/blueprint'>
       <Routes>
         <Route path='/' element={<MainLayout />}>
-          <Route path='/blueprint/' element={<Homepage />} />
-          <Route path='/blueprint/getstarted' element={<Getstartedpage />} />
-          <Route path='/blueprint/about' element={<Aboutpage />} />
-          <Route path='/blueprint/services' element={<Services />} />
-          <Route path='/blueprint/reviews' element={<Reviewspage />} />
+          <Route path='/' element={<Homepage />} />
+          <Route path='/getstarted' element={<Getstartedpage />} />
+          <Route path='/about' element={<Aboutpage />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/reviews' element={<Reviewspage />} />
         </Route>
       </Routes>
     </BrowserRouter>

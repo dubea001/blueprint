@@ -14,7 +14,7 @@ const Reviewspage = () => {
     <main className="">
       <section className="border-lightBlueBg border-b-2 pb-padInRem3 flex flex-col p-4 w-full items-center justify-center mx-auto md:py-padInRem3">  
         <h1 className="text-mainBlueBg text-center font-bold text-size35 mb-4 leading-none md:text-size45 md:leading-none">Client Reviews</h1>
-        <div className="text-center"><Link to="/blueprint/" className="font-normal text-size20 px-padInRem1 py-pad6 cursor-pointer hover:font-medium text-mainTextColor md:px-pad16 md:py-pad10">Home</Link></div>
+        <div className="text-center"><Link to="/" className="font-normal text-size20 px-padInRem1 py-pad6 cursor-pointer hover:font-medium text-mainTextColor md:px-pad16 md:py-pad10">Home</Link></div>
       </section> 
       <div className="">
         <div className="m-4 p-6 flex flex-col md:flex-row">

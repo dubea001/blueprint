@@ -31,7 +31,7 @@ const Professional = () => {
           </div>
 
           <div className="w-full my-6 border-t border-lightTextColor pt-8 text-center md:text-start">
-            <Link to="/blueprint/getstarted" className="font-normal cursor-pointer text-size16 px-pad16 py-pad8 bg-mainBlueBg text-white hover:font-medium">Get started</Link>
+            <Link to="/getstarted" className="font-normal cursor-pointer text-size16 px-pad16 py-pad8 bg-mainBlueBg text-white hover:font-medium">Get started</Link>
           </div>
         </div>
 
