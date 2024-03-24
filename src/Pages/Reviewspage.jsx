@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import Professional from '../Component/Professional'
 
-import Jessymartin from '../assets/images/jessy-martin.jpg';
 import Collins from '../assets/images/Collins-Michelson.jpeg';
 import Vivian from '../assets/images/vivian.jpeg';
 import Thomas from '../assets/images/thomas.jpeg';
@@ -15,7 +14,7 @@ const Reviewspage = () => {
     <main className="">
       <section className="border-lightBlueBg border-b-2 pb-padInRem3 flex flex-col p-4 w-full items-center justify-center mx-auto md:py-padInRem3">  
         <h1 className="text-mainBlueBg text-center font-bold text-size35 mb-4 leading-none md:text-size45 md:leading-none">Client Reviews</h1>
-        <div className="text-center"><Link to="/blueprint" className="font-normal text-size20 px-padInRem1 py-pad6 cursor-pointer hover:font-medium text-mainTextColor md:px-pad16 md:py-pad10">Home</Link></div>
+        <div className="text-center"><Link to="/blueprint/" className="font-normal text-size20 px-padInRem1 py-pad6 cursor-pointer hover:font-medium text-mainTextColor md:px-pad16 md:py-pad10">Home</Link></div>
       </section> 
       <div className="">
         <div className="m-4 p-6 flex flex-col md:flex-row">
@@ -24,7 +23,7 @@ const Reviewspage = () => {
             <h1 className="text-center font-bold my-4 text-mainTextColor text-size35 md:text-size45 md:leading-none md:text-start">What Our Clients Says About Us</h1>  
           </div>
           <div className="w-4/5 border-b border-black pb-padInRem3 mx-auto flex flex-col md:flex-row md:items-start">
-            <img src={Jane} className='rounded-xl mb-8 w-80 m-auto md:m-4'/>
+            <img src={Jane} className='rounded-xl mb-8 w-80 m-auto md:m-4' loading='lazy'/>
             <div className="md:m-6 shadow-xl p-4">
               <p>"If anyone has a heart and sees this post please like it so it can gain some attention. 
 I just found out my poor aunt got 30k stolen. All the money she had left from her husband dying and the money she has to live. 

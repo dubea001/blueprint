@@ -28,22 +28,22 @@ const Footer = () => {
           <div className="m-2 md:w-1/4">
             <h2 className="font-bold text-size20">Services</h2>
             <p className="text-lightTextColor my-4 hover:font-medium cursor-pointer">
-              <Link to='/getstarted'>Cryptocurrency Recovery</Link>
+              <Link to='/blueprint/getstarted'>Cryptocurrency Recovery</Link>
             </p>
             <p className="text-lightTextColor my-4 hover:font-medium cursor-pointer">
-              <Link to='/getstarted'>Blackmail and Extortion</Link>
+              <Link to='/blueprint/getstarted'>Blackmail and Extortion</Link>
             </p>
             <p className="text-lightTextColor my-4 hover:font-medium cursor-pointer">
-              <Link to='/getstarted'>Account Activation</Link>
+              <Link to='/blueprint/getstarted'>Account Activation</Link>
             </p>
             <p className="text-lightTextColor my-4 hover:font-medium cursor-pointer">
-              <Link to='/getstarted'>Device Hack</Link>
+              <Link to='/blueprint/getstarted'>Device Hack</Link>
             </p>
             <p className="text-lightTextColor my-4 hover:font-medium cursor-pointer">
-              <Link to='/getstarted'>Social Media Hack</Link>
+              <Link to='/blueprint/getstarted'>Social Media Hack</Link>
             </p>
             <p className="text-lightTextColor my-4 hover:font-medium cursor-pointer">
-              <Link to='/getstarted'>Scores and Records</Link>
+              <Link to='/blueprint/getstarted'>Scores and Records</Link>
             </p>
           </div>
 

@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import image1 from '../assets/images/apexdeft-getstarted.jpeg';
-import image2 from '../assets/images/apexdeft-cta.jpeg';
 
 import worldWide from '../assets/icons/worldwide-icon.png';
 import group from '../assets/icons/group-icon.png'
@@ -32,12 +31,12 @@ const Professional = () => {
           </div>
 
           <div className="w-full my-6 border-t border-lightTextColor pt-8 text-center md:text-start">
-            <Link to="/getstarted" className="font-normal cursor-pointer text-size16 px-pad16 py-pad8 bg-mainBlueBg text-white hover:font-medium">Get started</Link>
+            <Link to="/blueprint/getstarted" className="font-normal cursor-pointer text-size16 px-pad16 py-pad8 bg-mainBlueBg text-white hover:font-medium">Get started</Link>
           </div>
         </div>
 
         <div className="items-center w-11/12 m-auto p-6">
-          <img src={image1} alt="" className="rounded-lg m-auto border-8 border-white" />
+          <img src={image1} alt="" className="rounded-lg m-auto border-8 border-white" loading='lazy'/>
         </div>
 
     </section>)
