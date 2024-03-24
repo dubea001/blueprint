@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 import { Link } from 'react-router-dom';
 
-import CompanyLogo from '../assets/logo-logo.png';
+import CompanyLogo from '../assets/blueprint-logo.png';
 
 const Footer = () => {
 
