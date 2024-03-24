@@ -22,7 +22,7 @@ const Reviewspage = () => {
             <h5 className="text-center font-semibold text-size14 md:text-start">TESTIMONIALS</h5>
             <h1 className="text-center font-bold my-4 text-mainTextColor text-size35 md:text-size45 md:leading-none md:text-start">What Our Clients Says About Us</h1>  
           </div>
-          <div className="w-4/5 border-b border-black pb-padInRem3 mx-auto flex flex-col md:flex-row md:items-start">
+          <div className="w-4/5 border-b border-black pb-padInRem3 mx-auto flex flex-col  md:items-center">
             <img src={Jane} className='rounded-xl mb-8 w-80 m-auto md:m-4' loading='lazy'/>
             <div className="md:m-6 shadow-xl p-4">
               <p>"If anyone has a heart and sees this post please like it so it can gain some attention. 
