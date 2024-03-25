@@ -4,6 +4,7 @@ import Navbar from '../Component/Navbar';
 import Footer from '../Component/Footer';
 
 import Contact from '../Component/Contact';
+import Tidio from '../Subcomponent/Tidio';
 
 const MainLayout = () => {
   return (
@@ -11,6 +12,7 @@ const MainLayout = () => {
     <Navbar/>
     <Outlet/>
     <Contact/>
+    <Tidio/>
     <Footer/>
     </div>
   )
