@@ -21,7 +21,7 @@ const Footer = () => {
             <div className=" md:mx-6">
               <p className="company-location">San Francisco, California</p>
               <div className="font-bold text-size22">+1 (920) 355-3142</div>
-              <p className="company-email">mail@blueprintM6.com</p>
+              <p className="company-email">blueprintM6@gmail.com</p>
             </div>
           </div>
 

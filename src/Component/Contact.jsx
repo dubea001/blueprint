@@ -14,7 +14,7 @@ const Contact = () => {
         <a href="https://www.instagram.com/blueprintm6/"><img src={instagram} className='w-10 object-cover transition-transform duration-300 transform hover:scale-125'/></a>
       </div>
       <div className="bg-emailBg rounded-full p-pad8 m-2">
-        <a href="mailto:mail@blueprintm6.com"><img src={email} className='w-10 object-cover transition-transform duration-300 transform hover:scale-125'/></a>
+        <a href="mailto:blueprintm6@gmail.com"><img src={email} className='w-10 object-cover transition-transform duration-300 transform hover:scale-125'/></a>
       </div>
     </div>
   )
