@@ -1,38 +1,64 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Form = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    country: '',
-    message: ''
-  });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
 
-  const handleSubmit = (e) => {
+    const form = useRef()
+
+    const [selectedCountry, setSelectedCountry] = useState('');
+    const [selectedService, setSelectedService] = useState('');
+
+    const sendEmail = (e) => {
     e.preventDefault();
-    // You can handle form submission here
-    // console.log(formData);
-  };
+
+    const country = selectedCountry || form.current['user_country'].value;
+    const service = selectedService || form.current['service_needed'].value;
+
+    const formData = new FormData(form.current);
+    formData.set('user_country', country);
+    formData.set('service_needed', service);
+
+
+    emailjs.sendForm('service_upfk25a', 'template_1vorr8o', form.current, {
+        publicKey: 'hVWcm20quWog5gpuk',
+      })
+      .then(() => {
+          form.current.reset();
+          setSelectedCountry('');
+          setSelectedService('');
+          alert('MESSAGE SENT');
+        },
+        (error) => {
+         
+        },
+      );
+     };
+
+      const handleCountryChange = (e) => {
+        setSelectedCountry(e.target.value);
+      };
+
+      const handleServiceChange = (e) => {
+       setSelectedService(e.target.value);
+      };
+
+
 
   return (
     <div className="max-w-md mx-auto border rounded-lg shadow-xl p-padInRem1 mx-8 my-12">
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={sendEmail} className="space-y-6" ref={form}>
         <div>
           <label htmlFor="name" className="block text-sm font-normal text-gray-700">Name <span className="text-colorRed font-bold">*</span></label>
-          <input type="text" id="name" name="name" placeholder='Name' required value={formData.name} onChange={handleChange} className="mt-1 p-2 border w-full"/>
+          <input type="text" id="name" name="from_name" placeholder='Name' required className="mt-1 p-2 border w-full"/>
         </div>
         <div>
           <label htmlFor="email" className="block text-sm font-normal text-gray-700">Email <span className="text-colorRed font-bold">*</span></label>
-          <input type="email" id="email" name="email" placeholder='Email' required value={formData.email} onChange={handleChange} className="mt-1 p-2 border w-full"/>
+          <input type="email" id="email" name="reply_to" placeholder='Email' required className="mt-1 p-2 border w-full"/>
         </div>
         <div>
           <label htmlFor="country" className="block text-sm font-normal text-gray-700">Country <span className="text-colorRed font-bold">*</span></label>
-          <select id="country" name="country" required="required" value={formData.country} onChange={handleChange} className="mt-1 p-2 border w-full">
+          <select id="country" name="user_country" required="required" value={selectedCountry} onChange={handleCountryChange}  className="mt-1 p-2 border w-full">
             <option value="0" data-id="0">Select Country</option>
               <option className="iws_country" value="Afghanistan" data-id="1">Afghanistan</option>
               <option className="iws_country" value="Aland Islands" data-id="2">Aland Islands</option>
@@ -288,7 +314,7 @@ const Form = () => {
         </div>
          <div>
           <label htmlFor="country" className="block text-sm font-normal text-gray-700">What is the service needed <span className="text-colorRed font-bold">*</span></label>
-          <select id="service" name="service" required value={formData.service} onChange={handleChange} className="mt-1 p-2 border w-full">
+          <select id="service" name="service_needed" required="required" value={selectedService} onChange={handleServiceChange} className="mt-1 p-2 border w-full">
                   <option value="usdt_rec">USDT Recovery/Hack</option>
 									<option value="btc_rec">Bitcoin Recovery/Hack</option>
 									<option value="tox_rec">Toxic Relationship Help</option>
@@ -308,15 +334,16 @@ const Form = () => {
 									<option value="Game Recovery and Activation">Game Recovery and Activation</option>
 									<option value="G-mail Recovery">G-mail Recovery</option>
 									<option value="Password Recovery">Password Recovery</option>
-									<option value="Narcissistic Victims Support Helpline">Narcissistic Victims Support Helpline</option>
+									<option value="Narcissistic Victims Support Helpline">Narcissistic Victims Support Helpline</option>              
+                  <option value="Others">Others</option>
           </select>
         </div>
         <div>
           <label htmlFor="message" className="block text-sm font-normal text-gray-700">Message</label>
-          <textarea id="message" name="message" placeholder='Message' rows="4" value={formData.message} onChange={handleChange} className="mt-1 p-2 border w-full"></textarea>
+          <textarea id="message" name="message" placeholder='Message' rows="4" className="mt-1 p-2 border w-full"></textarea>
         </div>
         <div>
-          <button type="submit" className="w-full flex justify-center py-pad12 px-4 border border-transparent shadow-sm text-size16 text-white bg-mainTextColor hover:bg-hoverTextMainColor focus:outline-none focus:ring-2 focus:ring-offset-2">Send Message</button>
+          <button type="submit" value='send' className="w-full flex justify-center py-pad12 px-4 border border-transparent shadow-sm text-size16 text-white bg-mainTextColor hover:bg-hoverTextMainColor focus:outline-none focus:ring-2 focus:ring-offset-2">Send Message</button>
         </div>
       </form>
     </div>
