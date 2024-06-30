@@ -3,19 +3,25 @@ import { navLinks } from '../Constants/index';
 import { Link } from 'react-scroll';
 import { MdMenu, MdClose } from 'react-icons/md';
 import { useState } from 'react';
+
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
+
+    const refreshPage = () => {
+        window.location.reload();
+    };
+
     return (
         <nav className='flex items-center justify-between py-4'>
-            <a
-                href='/'
+            <div
+                onClick={refreshPage}
                 className='flex items-center justify-start w-fit cursor-pointer'
             >
                 <img src={assets.Logo} alt='Logo' width={70} />
                 <h1 className='font-semibold text-white text-2xl md:text-3xl'>
                     BlueprintM6
                 </h1>
-            </a>
+            </div>
             <ul className='lg:flex items-center justify-center lg:space-x-6 hidden'>
                 {navLinks.map((navLink) => (
                     <li

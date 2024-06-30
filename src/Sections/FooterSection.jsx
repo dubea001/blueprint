@@ -2,6 +2,8 @@ import { assets } from '../assets/assets';
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 import { navLinks } from '../Constants/index';
+import { FaInstagram, FaFacebookF, FaWhatsapp } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const FooterSection = () => {
     const [email, setEmail] = useState('');
@@ -13,16 +15,13 @@ const FooterSection = () => {
         <footer className='bg-background px-6 md:px-8 lg:px-[3.5rem] py-6 mt-16'>
             <div className='flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 my-6'>
                 <div className='flex-1 p-4'>
-                    <a
-                        href='/'
-                        className='flex items-center justify-start w-fit cursor-pointer'
-                    >
+                    <div className='flex items-center justify-start w-fit cursor-pointer'>
                         <img
                             src={assets.Logo}
                             alt='Logo'
                             className='w-20 h-20 md:w-28 md:h-28 lg:w-40 lg:h-40'
                         />
-                    </a>
+                    </div>
                     <span className='text-base text-gray lg:text-lg'>
                         San Francisco, California
                     </span>
@@ -31,24 +30,34 @@ const FooterSection = () => {
                         blueprintM6@gmail.com
                     </span>
 
-                    <div className='flex items-center space-x-4 justify-start my-4 w-fit'>
+                    <div className='flex items-center space-x-2 justify-start my-4 w-fit'>
                         <a
                             href='https://www.facebook.com/blueprintm6/'
-                            className='w-12 h-12 border border-primary flex items-center justify-center rounded-full hover:bg-primary hover:border-none hover:transition hover:duration-200 hover:ease-in-out'
+                            target='_blank'
+                            className='w-8 h-8 md:w-12 md:h-12 border border-primary flex items-center justify-center rounded-full hover:bg-primary hover:border-none hover:transition hover:duration-200 hover:ease-in-out'
                         >
-                            <img src={assets.Facebook} alt='facebook' />
+                            <FaFacebookF />
                         </a>
                         <a
                             href='https://www.instagram.com/blueprintm6/'
-                            className='w-12 h-12 border border-primary flex items-center justify-center rounded-full hover:bg-primary hover:border-none hover:transition hover:duration-200 hover:ease-in-out'
+                            target='_blank'
+                            className='w-8 h-8 md:w-12 md:h-12 border border-primary flex items-center justify-center rounded-full hover:bg-primary hover:border-none hover:transition hover:duration-200 hover:ease-in-out'
                         >
-                            <img src={assets.Instagram} alt='instagram' />
+                            <FaInstagram />
                         </a>
                         <a
                             href='https://wa.me/19203553142'
-                            className='w-12 h-12 border border-primary flex items-center justify-center rounded-full hover:bg-primary hover:border-none hover:transition hover:duration-200 hover:ease-in-out'
+                            target='_blank'
+                            className='w-8 h-8 md:w-12 md:h-12 border border-primary flex items-center justify-center rounded-full hover:bg-primary hover:border-none hover:transition hover:duration-200 hover:ease-in-out'
                         >
-                            <img src={assets.Whatsapp} alt='whatsapp' />
+                            <FaWhatsapp />
+                        </a>
+                        <a
+                            href='https://www.x.com/blueprintm6/'
+                            target='_blank'
+                            className='w-8 h-8 md:w-12 md:h-12 border border-primary flex items-center justify-center rounded-full hover:bg-primary hover:border-none hover:transition hover:duration-200 hover:ease-in-out'
+                        >
+                            <FaXTwitter />
                         </a>
                     </div>
                 </div>

@@ -62,7 +62,7 @@ const Testimonials = () => {
                 <Slider {...settings}>
                     {reviews.map((review, index) => (
                         <div
-                            className='min-h-[30rem] mx-2 px-4 pt-4 shadow-xl bg-white rounded-xl text-start flex flex-col justify-between'
+                            className='min-h-[30rem] w-fit mx-2 px-4 pt-4 shadow-xl bg-white rounded-xl text-start flex flex-col justify-between'
                             key={index}
                         >
                             <p className='text-gray min-h-80'>{review.text}</p>
@@ -73,10 +73,10 @@ const Testimonials = () => {
                                     className='w-20 h-20 rounded-full mr-4'
                                 />
                                 <div>
-                                    <p className='font-bold text-primaryDark'>
+                                    <p className='font-bold text-black'>
                                         {review.name}
                                     </p>
-                                    <span className='text-sm'>
+                                    <span className='text-sm text-primaryDark'>
                                         {review.country}
                                     </span>
                                 </div>
