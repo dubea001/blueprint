@@ -18,7 +18,7 @@ const Navbar = () => {
                 className='flex items-center justify-start w-fit cursor-pointer'
             >
                 <img src={assets.Logo} alt='Logo' width={70} />
-                <h1 className='font-semibold text-white text-2xl md:text-3xl'>
+                <h1 className='font-semibold text-white hidden md:block md:text-2xl'>
                     BlueprintM6
                 </h1>
             </div>

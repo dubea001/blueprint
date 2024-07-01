@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 const Hero = () => {
     return (
         <div
-            className='flex flex-col md:items-center justify-center my-8 mx-4 md:my-16'
+            className='flex flex-col md:items-center justify-center my-8 md:my-16'
             id='Home'
         >
             <h1 className='text-4xl font-bold md:text-6xl mb-6 leading-relaxed md:text-center'>
