@@ -5,10 +5,10 @@ import { Link } from 'react-scroll';
 const Hero = () => {
     return (
         <div
-            className='flex flex-col md:items-center justify-center my-8 md:my-16'
+            className='flex flex-col md:items-center justify-center my-8 md:my-16 px-6 md:px-8 lg:px-[3.5rem]'
             id='Home'
         >
-            <h1 className='text-4xl font-bold md:text-6xl mb-6 leading-relaxed md:text-center'>
+            <h1 className='text-4xl font-bold md:text-6xl mb-6 leading-normal md:text-center'>
                 Professionals
                 <span className='text-primary'> Providing</span> <br /> Advanced
                 Solutions

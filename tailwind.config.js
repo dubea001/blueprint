@@ -10,6 +10,7 @@ export default {
         },
         colors: {
             primary: '#009EFF',
+            navBg: 'hsl(203, 100%, 20%)',
             primaryDark: '#0576C7',
             gray: '#54595F',
             black: '#000000',

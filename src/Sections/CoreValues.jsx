@@ -74,7 +74,7 @@ const CoreValues = () => {
                                 </div>
 
                                 {showAnswer[index] && (
-                                    <p className='text-primary px-6'>
+                                    <p className='text-gray px-6'>
                                         {values.description}
                                     </p>
                                 )}

@@ -44,7 +44,7 @@ const Form = () => {
     };
 
     return (
-        <div className='w-[80%] mx-auto rounded-lg shadow-2xl shadow-gray p-4'>
+        <div className='md:w-[80%] mx-auto rounded-lg shadow-2xl shadow-gray p-4'>
             <form onSubmit={sendEmail} className='space-y-6' ref={form}>
                 <div>
                     <label

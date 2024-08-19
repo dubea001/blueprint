@@ -8,37 +8,9 @@ const Testimonials = () => {
     const settings = {
         dots: true,
         infinite: true,
-        autoplay: true,
-        autoplaySpeed: 8000,
-        speed: 900,
-        slidesToShow: 3,
+        speed: 500,
+        slidesToShow: 1,
         slidesToScroll: 1,
-        initialSlide: 0,
-        responsive: [
-            {
-                breakpoint: 976,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplaySpeed: 5000,
-                },
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplaySpeed: 5000,
-                },
-            },
-        ],
     };
 
     return (
@@ -58,21 +30,23 @@ const Testimonials = () => {
                 firsthand accounts of our dedication to recovery and
                 empowerment. Join us in the pursuit of justice and restoration.
             </p>
-            <div className='my-12 mx-6'>
+            <div className='my-12 lg:w-[60vw] mx-auto'>
                 <Slider {...settings}>
                     {reviews.map((review, index) => (
                         <div
-                            className='min-h-[30rem] w-fit mx-2 px-4 pt-4 shadow-xl bg-white rounded-xl text-start flex flex-col justify-between'
+                            className='shadow-xl bg-white rounded p-4 h-[35rem] md:h-80'
                             key={index}
                         >
-                            <p className='text-gray min-h-80'>{review.text}</p>
+                            <p className='text-gray text-start'>
+                                {review.text}
+                            </p>
                             <div className='flex items-center mt-4'>
                                 <img
                                     src={review.image}
                                     alt='client'
                                     className='w-20 h-20 rounded-full mr-4'
                                 />
-                                <div>
+                                <div className='text-start'>
                                     <p className='font-bold text-black'>
                                         {review.name}
                                     </p>

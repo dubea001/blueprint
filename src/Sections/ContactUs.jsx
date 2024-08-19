@@ -4,7 +4,7 @@ import AnimateOnView from '../Components/AnimateOnView';
 
 const ContactUs = () => {
     return (
-        <section className='my-8 px-6 md:px-8 lg:px-[3.5rem]' id='contact'>
+        <section className='my-8 px-4 md:px-8 lg:px-[3.5rem]' id='contact'>
             <h2 className='text-3xl font-bold md:text-4xl mb-6 text-center'>
                 Get Started
             </h2>
@@ -19,7 +19,7 @@ const ContactUs = () => {
                         <Form />
                     </div>
 
-                    <div className='w-[80%] mx-auto shadow-2xl shadow-gray rounded-2xl lg:w-1/2'>
+                    <div className='md:w-[80%] mx-auto shadow-2xl shadow-gray rounded-xl lg:w-1/2'>
                         <img
                             src={assets.GetStartedImage}
                             alt='customer care'

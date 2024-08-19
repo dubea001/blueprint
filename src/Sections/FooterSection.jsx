@@ -12,7 +12,7 @@ const FooterSection = () => {
         setEmail('');
     };
     return (
-        <footer className='bg-background px-6 md:px-8 lg:px-[3.5rem] py-6 mt-16'>
+        <footer className='bg-background p-2 md:px-8 lg:px-[3.5rem] py-6 mt-16'>
             <div className='flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 my-6'>
                 <div className='flex-1 p-4'>
                     <div className='flex items-center justify-start w-fit cursor-pointer'>

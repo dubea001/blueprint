@@ -61,7 +61,7 @@ const Faq = () => {
                         </div>
 
                         {showAnswer[index] && (
-                            <p className='text-primary px-6 text-start'>
+                            <p className='text-gray px-6 text-start'>
                                 {faq.answer}
                             </p>
                         )}
