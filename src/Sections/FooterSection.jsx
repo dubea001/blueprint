@@ -7,6 +7,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 const FooterSection = () => {
     const [email, setEmail] = useState('');
+    const year = new Date().getFullYear();
 
     const handleSubscribe = () => {
         setEmail('');
@@ -113,7 +114,7 @@ const FooterSection = () => {
 
             <hr className='my-4 text-gray text-2xl' />
             <p className='text-base text-gray md:text-lg text-center'>
-                Copyright © 2012-2024 BlueprintM6.com All Rights Reserved.
+                Copyright © 2012-{year} BlueprintM6.com All Rights Reserved.
             </p>
         </footer>
     );

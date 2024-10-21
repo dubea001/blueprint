@@ -18,11 +18,11 @@ const Services = () => {
             <div className='my-8'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  place-items-center'>
                     {services.map((service) => (
-                        <AnimateOnView animationClass='animate-fadeIn'>
-                            <div
-                                key={service.title}
-                                className='rounded-lg shadow-lg shadow-gray overflow-hidden min-h-[30rem] max-w-[25rem] flex flex-col items-center'
-                            >
+                        <div
+                            key={service.title}
+                            className='rounded-lg shadow-lg shadow-gray overflow-hidden min-h-[30rem] max-w-[25rem] flex flex-col items-center'
+                        >
+                            <AnimateOnView animationClass='animate-fadeIn'>
                                 <img
                                     src={service.coverImage}
                                     alt='service offered'
@@ -34,8 +34,8 @@ const Services = () => {
                                     </h2>
                                     <p>{service.description}</p>
                                 </div>
-                            </div>
-                        </AnimateOnView>
+                            </AnimateOnView>
+                        </div>
                     ))}
                 </div>
             </div>
